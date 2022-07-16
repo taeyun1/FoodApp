@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>맛집지도</title>
+	<meta name="author" content="동네코딩" />
+	<meta name="description" content="맛집지도 서비스" />
+	<meta name="keywords" content="동네코딩, 맛집지도, 유튜버맛집, 맛집유튜버, 맛집추천, 맛집, 맛있는곳, 음식" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div id="container">
+		<nav>
+			<div class="inner">
+				<div class="nav-container">
+					<h1 class="nav-title">맛집지도</h1>
+					<button class="nav-contact">Contact</button>
+				</div>
+			</div>
+		</nav>
+
+		<!-- 카테고리 -->
+		<main>
+			<section class="category">
+				<div class="category-container ">
+					<h2 class="category-choice inner">카테고리 선택</h2>
+					<div class="category-list inner">
+						<button class="category-item" id="korea">한식</button>
+						<button class="category-item" id="china">중식</button>
+						<button class="category-item" id="japan">일식</button>
+						<button class="category-item" id="america">양식</button>
+						<button class="category-item" id="wheat">분식</button>
+						<button class="category-item" id="meat">구이</button>
+						<button class="category-item" id="sushi">회/초밥</button>
+						<button class="category-item" id="etc">기타</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- 카카오 지도 -->
+			<section>
+				<div>
+					<div id="map" class="inner"></div>
+				</div>
+			</section>
+		</main>
+
+
+
+
+		<script type="text/javascript"
+			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a116ec8cf819dd8bbb5c885b8399e0b4&libraries=services"></script>
+		<script src="script.js"></script>
+	</div>
+</body>
+
+</html>
